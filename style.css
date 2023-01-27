@@ -10,6 +10,7 @@ body{
 :root {
   --red-color : red;
   --white-color:white;
+  --text-colorB: #141414;
 }
 .ring{
   border: 1px solid red;
@@ -25,9 +26,14 @@ a {
 /* Main CSS Starts Here */
 .header-container{
   padding: 10px 15px 10px 5px;
+  background-color: var(--white-color);
   display: flex;
   align-items: center;
   box-shadow: 0px 1px 2px 0 rgb(34 36 38 / 15%);
+  z-index: 1000;
+  height: 57px;
+  position: sticky;
+  top: 0;
 }
 
 .side-toggleIcon{
@@ -54,9 +60,9 @@ a {
   flex: 1;
   align-items: center;
   height: 35px;
-  border: 1px solid rgb(189, 189, 189);
+  border: 1px solid rgb(200, 200, 200);
   justify-content: space-between;
-  border-radius: 5px;
+  border-radius: 4px;
   margin: 0 20px;
 
 }
@@ -94,7 +100,6 @@ a {
 }
 .login-arrow{
   border: none;
-  background-color: transparent;
   box-shadow: 0px 1px 5px 0px #26262640;
   margin-right: 10px;
 }
@@ -102,4 +107,39 @@ a {
 .fa-arrow-right-to-bracket{
   color: var(--red-color);
   padding: 10px;
+}
+
+.left-section{
+  width: 15%;
+  height: 1000px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(242, 240, 240);
+}
+.section-list{
+  padding: 10px 0 15px 0;
+  background-color: rgb(248, 248, 248);
+  border-bottom: 1px solid lightgray;
+  width: 98%;
+}
+.nav-list{
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+}
+.nav-list p{
+  margin-left: 15px;
+  font-size: 14px;
+  color: var(--text-colorB);
+}
+.nav-list i{
+  color: rgb(87, 87, 87);
+}
+.nav-list:hover i{
+  color: red;
+}
+.nav-list:hover{
+  background-color: rgb(231, 231, 231);
+  cursor: pointer;
 }
