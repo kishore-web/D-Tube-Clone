@@ -1,0 +1,119 @@
+@import url("../style.css");
+
+.videoloading-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 20px 10px;
+  overflow-x: hidden;
+}
+.video-frame{
+  width: 72%;
+  height: 80%;
+  margin-right: 30px;
+}
+.related-videos{
+  width: 20%;
+}
+.rv-heading{
+  margin-bottom: 10px;
+}
+.video-container{
+  margin-bottom: 20px;
+}
+.iframe-section iframe{
+  width: 100%;
+  height: 66vh;
+}
+.video-content{
+  border: 1px solid lightgray;
+}
+.video-content-text{
+  font-size: 1.2rem;
+  text-align: center;
+}
+.video-content-likes{
+  display: flex;
+  justify-content: flex-end;
+  color: gray;
+}
+.video-content-likes>div:hover{
+  color: black;
+}
+.video-content-likes>div{
+  padding: 20px 10px 12px 20px;
+}
+.owner-data{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid lightgray;
+  margin-top: -1px;
+}
+.owner-img{
+  width: 60px;
+  height: 60px;
+}
+.owner-img img{
+  width: 100%;
+  border-radius: 50%;
+}
+.owner-subscription{
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.owner-subscription .profile-name{
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+.sub-btn{
+  display: inline-block;
+  background-color: rgb(201, 200, 200);
+  border: none;
+  padding: 8px 10px;
+  box-shadow: 0px 1px 2px 0px #26262640;
+}
+.sub-val{
+  background-color: white;
+  box-shadow: 0px 1px 2px 0px #26262640;
+  padding: 8px;
+  display: inline-block;
+}
+.info-container{
+  border: 1px solid lightgray;
+  margin-top: -1px;
+  padding: 10px;
+
+}
+.comments-section{
+  background-color: rgb(238, 238, 238);
+  padding: 15px 10px 25px 10px;
+  box-shadow: 0px 1px 2px 0px #26262640;
+
+}
+.comments-section textarea{
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+.comments-section textarea:focus{
+  outline-color: rgb(134, 134, 134);
+}
+.comment-btndiv{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.comment-btndiv p{
+  color: white;
+  font-size: 0.9rem;
+  background-color: #223154;
+  padding: 8px 10px;
+}
+.comment-icon{
+  background-color: white;
+  padding: 8px;
+}
