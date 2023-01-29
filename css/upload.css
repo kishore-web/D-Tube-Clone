@@ -1,0 +1,9 @@
+.upload-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-div input{
+  display: block;
+  margin: 20px 0;
+}

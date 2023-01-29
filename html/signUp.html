@@ -17,7 +17,7 @@
         <i class="fa-solid fa-bars fa-lg"></i>
       </div>
       <a href="../index.html"><img class="logo" src="../src/DTube_logo.svg" alt="Dtube-logo"></a>
-      <h3 class="coin-price">$0.046</h3>
+      <!-- <h3 class="coin-price">$0.046</h3> -->
     </nav>
     <nav class="search-box flexR">
         <input
@@ -29,7 +29,7 @@
         <div><i class="fa fa-search" aria-hidden="true"></i></div>
     </nav>
     <nav class="right-nav flexR">
-      <a href="./html/login.html"> 
+      <a href="../html/login.html"> 
         <div class="flexR">
           <button class="login-btn">LOGIN</button>
           <div class="login-arrow">
@@ -39,30 +39,30 @@
         </a>
     </nav>
   </header>
+
   <main class="login-container flexC">
     <h1>DTube Sign Up</h1>
     <p>Avalon blockchain is dedicated to DTube's usage. Connecting with it will allow you to monetize your videos with DTC indefinitely in time.</p>
     <p>Authenticate with a DTube private key. 
       You may use your custom keys or the master key.</p>
     <div class="login-form">
-      <form action="">
+      <form>
           <div class="user-name flexR">
             <i class="fa fa-solid fa-user"></i>
-            <input type="text" placeholder="Username">
+            <input type="text" id="username" placeholder="Username" required>
           </div>
           <div class="user-name flexR">
             <i class="fa-solid fa-envelope"></i>
-            <input type="email" placeholder="Enter valid Email">
+            <input type="email" id="emailid" placeholder="Enter valid Email" required>
           </div>
           <div class="user-name flexR">
             <i class="fa fa-solid fa-key"></i>
-            <input type="password" name="" id="" placeholder="Password">
+            <input type="password" name="" id="password" placeholder="Password" required>
           </div> 
           <button class="signup-btn">Sign Up</button>
-    </div>
-        
       </form>
     </div>
   </main>
+  <script src="../js/signUp.js"></script>
 </body>
 </html>

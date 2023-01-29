@@ -45,14 +45,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     <p>Authenticate with a DTube private key. 
       You may use your custom keys or the master key.</p>
     <div class="login-form">
-      <form action="">
+      <form class="form">
           <div class="user-name flexR">
             <i class="fa fa-solid fa-user"></i>
-            <input type="text" placeholder="Username">
+            <input type="email" id="emailid" placeholder="Enter Email Id" required>
           </div>
           <div class="user-name flexR">
             <i class="fa fa-solid fa-key"></i>
-            <input type="password" name="" id="" placeholder="Password">
+            <input type="password" name="" id="password" placeholder="Password" required>
           </div>
           <div class="loginBtn-div flexR">
             <button class="login-btn">LOGIN</button>
@@ -61,12 +61,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             </div>
           </div>  
           <a href="../html/signUp.html"><p class="signup-btn">No Account? Sign Up</p></a>
-        
+        </form>
     </div>
         
-      </form>
-    </div>
   </main>
-
+<script src="../js/login.js"></script>
 </body>
 </html>
