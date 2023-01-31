@@ -2,6 +2,8 @@ const inputURL = document.querySelector("#url-id")
 const uploadBtn = document.querySelector("#upload-btn")
 const videoDescription = document.querySelector("#video-desc")
 const formUrlUpload = document.querySelector(".formUrl-upload")
+const warningUrl = document.querySelector(".warning-url")
+const warningDes = document.querySelector(".warning-des")
 
 formUrlUpload.addEventListener("submit", sendUrlData)
 
@@ -10,6 +12,21 @@ async function sendUrlData(e){
 
   const url = inputURL.value;
   const description = videoDescription.value;
+  
+  if(url==""){
+    warningUrl.innerHTML = "Enter valid Embed url"
+
+    setTimeout(()=>{
+      warningUrl.innerHTML = ""
+    },1000)
+  }
+  if(description == ""){
+    warningDes.innerHTML = "Enter valid Embed url"
+
+    setTimeout(()=>{
+      warningDes.innerHTML = ""
+    },1000)
+  }
   // console.log("hiii")
   // console.log(localStorage.getItem("token"))
   const videoUrlData = {

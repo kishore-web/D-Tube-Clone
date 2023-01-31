@@ -2,8 +2,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
+
 .upload-div input{
   display: block;
   margin: 20px 0;
+  width: 30vw;
+  height: 40px;
+  font-size: 1.2rem;
+}
+#upload-btn{
+  display: block;
+  margin: 20px 0;
+  width: 30vw;
+  height: 40px;
+  font-size: 1.2rem; 
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+#upload-btn:hover{
+  opacity: 0.8;
 }

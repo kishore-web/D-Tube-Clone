@@ -5,8 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VideoUpload</title>
-  <link rel="stylesheet" href="../css/upload.css">
+  
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../css/upload.css">
   <!-- Font Awesome CDN -->
 <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -109,7 +110,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     <div class="right-section upload-div">
       <form class="formUrl-upload">
         <input type="text" id="url-id" placeholder="Enter Video URL">
+        <span class="warning-url"></span>
         <input type="text" id="video-desc" placeholder="Enter Video Description">
+        <span class="warning-des"></span>
         <button id="upload-btn">UPLOAD</button>
       </form>
     </div>
